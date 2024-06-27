@@ -1,0 +1,99 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    margin: 0;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.container {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    background-color: #333;
+    color: #ffffff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0056b3;
+}
+
+button {
+    padding: 15px 20px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#clearBtn {
+    margin-top: 10px;
+    background-color: #dc3545; /* Red color for clear button */
+}
+
+#clearBtn:hover {
+    background-color: #c82333;
+}
+
+#message {
+    margin-top: 20px;
+    color: #ff4c4c; /* Red color for error messages */
+}
+
+#message.green {
+    color: #28a745; /* Green color for success messages */
+}
+
+.loading {
+    display: none;
+    margin-top: 20px;
+    color: #007BFF; /* Blue color for loading indicator */
+    font-size: 1.2em;
+}
+
+@media (min-width: 600px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    button {
+        width: auto;
+    }
+}
