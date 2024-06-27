@@ -1,99 +1,72 @@
-/* styles.css */
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Body styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #121212;
-    margin: 0;
-    padding: 10px;
-    color: #ffffff;
 }
 
+/* Container styles */
 .container {
-    background-color: #1e1e1e;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
     text-align: center;
-    width: 100%;
-    max-width: 450px;
-    box-sizing: border-box;
+    max-width: 600px;
+    padding: 20px;
 }
 
-h1 {
+/* Heading styles */
+h2 {
     margin-bottom: 20px;
-    font-size: 2em;
-    color: #ffffff;
 }
 
-input {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 2px solid #007BFF;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 1em;
-    background-color: #333;
-    color: #ffffff;
-}
-
-input:focus {
-    outline: none;
-    border-color: #0056b3;
-}
-
-button {
-    padding: 15px 20px;
-    background-color: #007BFF;
-    color: #ffffff;
+/* Input field styles */
+input[type="text"] {
+    width: calc(100% - 24px); /* Adjust for padding */
+    padding: 12px;
+    margin: 10px 0;
     border: none;
     border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Button styles */
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 1em;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #45a049;
 }
 
-#clearBtn {
-    margin-top: 10px;
-    background-color: #dc3545; /* Red color for clear button */
-}
-
-#clearBtn:hover {
-    background-color: #c82333;
-}
-
-#message {
-    margin-top: 20px;
-    color: #ff4c4c; /* Red color for error messages */
-}
-
-#message.green {
-    color: #28a745; /* Green color for success messages */
-}
-
-.loading {
-    display: none;
-    margin-top: 20px;
-    color: #007BFF; /* Blue color for loading indicator */
-    font-size: 1.2em;
-}
-
-@media (min-width: 600px) {
-    h1 {
-        font-size: 2.2em;
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    input[type="text"] {
+        width: calc(100% - 20px); /* Adjust for padding */
+        font-size: 14px;
     }
 
     button {
-        width: auto;
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }
